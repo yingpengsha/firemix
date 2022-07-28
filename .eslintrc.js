@@ -28,6 +28,9 @@ module.exports = {
 
     // replace 'no-redeclare' with @typescript-eslint
     'no-redeclare': 'off',
-    '@typescript-eslint/no-redeclare': ['error']
+    '@typescript-eslint/no-redeclare': ['error'],
+
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error']
   }
 }

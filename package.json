@@ -20,15 +20,20 @@
     ]
   },
   "scripts": {
+    "dev": "tsx watch ./entry.ts",
     "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
     "reset": "rimraf ./node_modules && pnpm install",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "@types/koa": "^2.13.5",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
     "@types/node": "^16.10.2",
-    "@types/react": "17.0.0",
-    "@types/react-dom": "17.0.0",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
@@ -43,10 +48,20 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "rimraf": "^3.0.2",
+    "tsup": "^6.2.0",
+    "tsx": "^3.8.0",
+    "type-fest": "^2.17.0",
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "react": "17.0.0",
-    "react-dom": "17.0.0"
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "regexparam": "^2.0.1",
+    "wouter": "^2.8.0-alpha.2"
   }
 }
