@@ -9,6 +9,7 @@
     "noImplicitAny": true,
     "allowJs": true,
     "checkJs": true,
+    "jsx": "react-jsx",
     "resolveJsonModule": true,
     "types": ["node"],
     "baseUrl": "./",

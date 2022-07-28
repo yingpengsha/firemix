@@ -9,6 +9,7 @@ module.exports = {
   },
   extends: [
     'standard',
+    'plugin:react/recommended',
     'plugin:json/recommended',
     'plugin:markdown/recommended'
   ],

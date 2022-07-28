@@ -14,28 +14,21 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
-  },
   "lint-staged": {
     "*.{js,ts,md,json,yml}": [
       "eslint --fix"
     ]
   },
   "scripts": {
-    "dev": "tsup --watch --sourcemap",
-    "build": "tsup",
-    "test:dev": "vitest --passWithNoTests",
-    "test": "vitest run --passWithNoTests",
     "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
-    "release": "bump --commit --push --tag && pnpm publish",
     "reset": "rimraf ./node_modules && pnpm install",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
     "@types/node": "^16.10.2",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
@@ -46,11 +39,14 @@
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.30.1",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "rimraf": "^3.0.2",
-    "tsup": "^5.2.1",
-    "typescript": "^4.4.3",
-    "vitest": "^0.1.13"
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
   }
 }
